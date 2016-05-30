@@ -1,0 +1,20 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+
+<p> You entered the word: <%= @user_word %> </p>
+
+<% if @error %>
+<%= @error %>
+<% else %>
+<p> It took you this many seconds: </p>
+<%= @results[:time] %>
+<p> French translation of your word: </p>
+<%= @results[:translation] %>
+<p> Your score is: </p>
+<%= @results[:score] %>
+<!--
+  puts "Time Taken to answer: @results[:time]}"
+  puts "Translation: #{result[:translation]}"
+  puts "Your score: #{result[:score]}"
+  puts "Message: #{result[:message]}" -->
+<% end %>
